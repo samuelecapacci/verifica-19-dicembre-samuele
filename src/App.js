@@ -25,13 +25,13 @@ class App extends Component {
         </div>
         <div className="App-body">  {/* body con id, titolo e foto da url */}
           <div>
-            <div className="id">ID: </div>{this.state.photo.id} {/* id foto preso da fetch */}
+            <div className="id">Id: </div>{this.state.photo.id} {/* id foto preso da fetch */}
           </div>
           <div>
-            <div className="title">TITLE: </div>{this.state.photo.title} {/* titolo foto preso da fetch */}
+            <div className="title">Title: </div>{this.state.photo.title} {/* titolo foto preso da fetch */}
           </div>
           <div>
-            <img className='indirizzo' src={this.state.photo.url} />
+            <img src={this.state.photo.url} />
           </div>
         </div>
         <div className="App-footer"> {/* footer con nome e data */}
