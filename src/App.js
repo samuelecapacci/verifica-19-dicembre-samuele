@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Barra from './components/barra/Barra';
 
@@ -20,7 +19,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div>
+      <div className="App">
         <div className="App-header">
           <Barra />
         </div>
@@ -34,6 +33,10 @@ class App extends Component {
           <div>
             <img className='indirizzo' src={this.state.photo.url} />
           </div>
+        </div>
+        <div className="App-footer">
+        <p className="tag">Samuele Capacci</p>
+        <p className="tag">19/12/2018</p>
         </div>
       </div>
     );
